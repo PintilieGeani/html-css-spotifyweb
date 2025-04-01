@@ -3,16 +3,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 img{
     width: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Root */
 :root{
     --footer: 100px;
     --col-left: 200px;
+    --color-grey: #d3d3d3;  
 }
 
 /* Layout */
@@ -35,13 +41,21 @@ img{
 .col-left{
     height: 100%;
     width: var(--col-left);
-    background-color: violet;
+    background-color: black;
     border: 1px solid black;
+    padding: 10px 20px;
+    color: var(--color-grey);
 }
 .col-right{
     height: 100%;
     width: calc(100% - var(--col-left));
     background-color: brown;
+}
+
+
+/* Debug */
+div{
+    border: 1px solid black;
 }
 
 
@@ -53,4 +67,57 @@ img{
 }
 .overflow-y{
     overflow-y: auto;
+}
+.flex-col{
+    flex-direction: column;
+}
+ul{
+    list-style: none;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+
+
+/* Logo */
+.logo{
+    width: 80%;
+}
+
+/* Navigazione */
+.nav{
+    font-size: 1.1rem;
+}
+.nav img{
+    width: 15%;
+    display: inline-block;
+}
+
+.nav ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+/* Playlist */
+.crea-playlist{
+    width: 25%;
+    aspect-ratio: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-grey);
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.crea{
+    align-items: center;
+    gap: 10px;
+}
+.lista-playlist ul li{
+    margin: 10px 0;
 }
