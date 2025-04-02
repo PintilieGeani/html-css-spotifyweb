@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -33,9 +34,7 @@
                     <div class="playlist mb-10">
                         <h3 class="mb-10">PLAYLIST</h3>
                         <div class="crea flex">
-                            <div class="crea-playlist flex">
-                                +
-                            </div>
+                               <button class="crea-playlist">+</button>
                             <h4>Crea playlist</h4>
                         </div>
                     </div>
@@ -70,7 +69,8 @@
                     <!-- Fine Lista Playlist -->
                 </div>
                 <!-- Fine colonna di sinistra -->
-                <div class="col-right overflow-y">
+                <!-- Colonna di destra -->
+                <div class="col-right overflow-y bg-dark-blue">
                     <!-- Upgrade section -->
                     <div class="upgrade flex">
                         <a href="#">EFFETUA L'UPGRADE</a>
@@ -95,6 +95,7 @@
                             <div class="col-recently">
                                 <div class="card-img">
                                     <img src="./img/metal_lifting.jpg" alt="Metal">
+                                    <div class="image-hover"><i class="fa-regular fa-play-circle"></i></div>
                                 </div>
                                 <div class="card-text">
                                     <h2>Heavy Metal</h2>
@@ -104,6 +105,7 @@
                             <div class="col-recently">
                                 <div class="card-img">
                                     <img src="./img/stranger.jpeg" alt="Stranger">
+                                    <div class="image-hover"><i class="fa-regular fa-play-circle"></i></div>
                                 </div>
                                 <div class="card-text">
                                     <h2>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h2>
@@ -113,6 +115,7 @@
                             <div class="col-recently">
                                 <div class="card-img">
                                     <img src="./img/aquietplace.jpeg" alt="A Quite Place">
+                                    <div class="image-hover"><i class="fa-regular fa-play-circle"></i></div>
                                 </div>
                                 <div class="card-text">
                                     <h2>A quit place</h2>
@@ -122,6 +125,7 @@
                             <div class="col-recently">
                                 <div class="card-img">
                                     <img src="./img/split.jpeg" alt="Split">
+                                    <div class="image-hover"><i class="fa-regular fa-play-circle"></i></div>
                                 </div>
                                 <div class="card-text">
                                     <h2>Split</h2>
@@ -131,6 +135,7 @@
                             <div class="col-recently">
                                 <div class="card-img">
                                     <img src="./img/cure.jpeg" alt="Cure">
+                                    <div class="image-hover"><i class="fa-regular fa-play-circle"></i></div>
                                 </div>
                                 <div class="card-text">
                                     <h2>A cure for wellness</h2>
@@ -140,6 +145,7 @@
                             <div class="col-recently">
                                 <div class="card-img">
                                     <img src="./img/sinister.jpeg" alt="Sinister">
+                                    <div class="image-hover"><i class="fa-regular fa-play-circle"></i></div>
                                 </div>
                                 <div class="card-text">
                                     <h2>Sinister</h2>
@@ -150,7 +156,7 @@
                         <!-- Fine Recently Played -->
                         <!-- Creato per -->
                         <h2 class="title">Creato per John Doe</h2>
-                        <h3 class="mb-20">Più ascolti, più accurati saranno i suggerimenti. </h3>
+                        <h3 class="mb-20 subtitle">Più ascolti, più accurati saranno i suggerimenti. </h3>
                         <div class="creato-per flex mb-20">
                             <div class="col-creato">
                                 <div class="card-img">
@@ -169,10 +175,9 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Fine Creato per -->
                         <!-- Artisti popolari -->
                         <h2 class="title">Artisti più popolati</h2>
-                        <h3 class="mb-20">Più ascolti, più accurati saranno i suggerimenti. </h3>
+                        <h3 class="mb-20 subtitle">Più ascolti, più accurati saranno i suggerimenti. </h3>
                         <div class="popolari flex">
                             <div class="col-popolari">
                                 <div class="card-img">
@@ -193,14 +198,61 @@
                         <!-- Fine Artisti popolari -->
                         </div>
                     </div>
+                <!-- Fine colonna destra -->
                 </div>
-
             </div>
-            <!-- Colonna di destra -->
+            <!-- Inizio Footer -->
+            <div class="footer overflow-y flex bg-light-black">
+                <div class="col-25 flex">
+                    <div class="footer-img">
+                        <img src="./img/sinister.jpeg" alt="Sinister">
+                    </div>
+                    <div class="nome-brano">
+                        <h2>Sinister</h2>
+                        <h3>Nome brano</h3>
+                    </div>
+                    <div class="icone">
+                        <ul class="flex">
+                        <li><i class="fa-regular fa-heart"></i></li>
+                        <li><i class="fa-regular fa-folder"></i></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-50 flex ">
+                    <div class="player flex">
+                        <i class="fa-solid fa-random"></i>
+                        <i class="fa-solid fa-step-backward"></i>
+                        <i class="fa-regular fa-play-circle"></i>
+                        <i class="fa-solid fa-step-forward"></i>
+                        <i class="fa-solid fa-redo-alt"></i>
+                    </div>
+                    <div class="brano flex">
+                        <h4>0:25</h4>
+                        <div class="andamento">
+                            <div class="andamento-up flex">
+                                <div class="pallina"></div>
+                            </div>
+                        </div>
+                        <h4>4:35</h4>
+                    </div>
+                </div>
+                <div class="col-25-right flex icone-right">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-up"></i>
+                    <div class="volume">
+                        <div class="volume-up flex">
+                            <div class="pallina"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fine Footer -->
         </div>
-        <div class="footer overflow-y"></div>
-        </div>
-        <!-- Fine colonna di destra -->
+
+
+
+
     </main>
 </body>
 
