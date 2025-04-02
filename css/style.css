@@ -41,8 +41,6 @@ a{
 .col-left{
     height: 100%;
     width: var(--col-left);
-    background-color: black;
-    border: 1px solid black;
     padding: 10px 20px;
     color: var(--color-grey);
 }
@@ -73,6 +71,9 @@ div{
 }
 ul{
     list-style: none;
+}
+.bg-black{
+    background-color: black;
 }
 .mb-20{
     margin-bottom: 20px;
