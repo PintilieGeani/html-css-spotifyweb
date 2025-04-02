@@ -189,6 +189,16 @@ ul{
 .col-creato{
     width: calc((100% - (var(--gap)*(var(--n-col) - 1))) / var(--n-col));
 }
-
+/* Artisti popolari */
+.col-popolari{
+    width: calc((100% - (var(--gap)*(var(--n-col) - 1))) / var(--n-col));
+}
+.col-popolari .card-img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.popolari{
+    gap: var(--gap);
+}
 
 /* Fine Colonna di destra */
