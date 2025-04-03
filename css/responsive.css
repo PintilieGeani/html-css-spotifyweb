@@ -1,0 +1,64 @@
+/* Tablet 868px */
+@media screen and (max-width: 878px ) {
+    :root{
+        --n-col:4
+    }
+    .nav-right ul{
+        justify-content: center;
+    }
+}
+
+/* Telefono grande 639px */
+@media screen and (max-width: 639px) {
+    :root{
+        --n-col:2
+    }
+    .nav-right ul{
+        font-size: 1.1rem;
+    }
+    .icone ul{
+        flex-direction: column;
+    }
+}
+
+/* Telefono medio 552px */
+@media screen and (max-width: 552px){
+    /* Nav-left */
+    .playlist{
+        display: none;
+    }
+    .lista-playlist{
+        display: none;
+    }
+    .col-left{
+        justify-content: space-between;
+    }
+    .nav-left span{
+        display: none;
+    }
+    .nav-left img{
+        width: 30px;
+    }
+    .download span,
+    .utente span{
+        display: none;
+    }
+    
+    /* Logo */
+    .logo{
+        margin-bottom: 0px;
+    }
+    .logo-large{
+        display: none;
+    }
+    .logo-small{
+        display: inline-block;
+    }
+    /* Riduzione col left */
+    :root{
+        --col-left: 65px
+    }
+    .nav-right ul{
+        font-size: 0.9rem;
+    }
+}
